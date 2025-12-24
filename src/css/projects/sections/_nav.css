@@ -1,0 +1,16 @@
+.ps-nav {
+}
+
+.ps-nav__items {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.ps-nav__item {
+  a {
+    font-weight: var(--font-semibold);
+  }
+}

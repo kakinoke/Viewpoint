@@ -1,0 +1,14 @@
+/* foundationの読み込み */
+@import "./foundation/index.css";
+
+/* レイアウトの読み込み */
+@import "./layouts/index.css";
+
+/* コンポーネントの読み込み */
+@import "./components/index.css";
+
+/* ユーティリティの読み込み */
+@import "./utilities/index.css";
+
+/* プロジェクトの読み込み */
+@import "./projects/index.css";

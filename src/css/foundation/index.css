@@ -1,0 +1,5 @@
+/* ベースの読み込み */
+@import "./_base.css";
+
+/* 変数の読み込み */
+@import "./_variables.css";

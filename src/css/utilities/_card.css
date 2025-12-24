@@ -1,0 +1,25 @@
+.u-card {
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: all var(--transition-duration-300) var(--transition-easing-in-out);
+  opacity: 0;
+  max-height: 0;
+}
+
+.u-card.active {
+  transform: scale(1, 1);
+  opacity: 1;
+  max-height: 1000px;
+}
+
+@keyframes {
+  0% {
+    opacity: 0;
+    transform: scale(1, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}

@@ -1,0 +1,132 @@
+.p-work {
+  grid-column: 1 / 13;
+}
+
+.p-work__items {
+  margin-block-start: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-8);
+}
+
+.p-work__item {
+  &:nth-child(odd) {
+    grid-column: 1 / 9;
+  }
+
+  &:nth-child(even) {
+    grid-column: 5 / 13;
+  }
+
+  &:first-child {
+    grid-column: 2 / 12;
+  }
+}
+
+.p-work__item__header {
+  font-family: var(--font-mono);
+  font-size: var(--fontsize-sm);
+  color: var(--color-secondary);
+  display: flex;
+  gap: var(--space-4);
+}
+
+.p-work__item__tags {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.p-work__item__tag {
+  font-family: var(--font-mono);
+  font-size: var(--fontsize-sm);
+  color: var(--color-secondary);
+}
+
+.p-work__item__link {
+  margin-block-start: var(--space-2);
+  display: inline-block;
+
+  img {
+    filter: saturate(0);
+    transition: all var(--transition-duration-300)
+      var(--transition-easing-in-out);
+  }
+
+  &:hover {
+    img {
+      filter: saturate(1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.p-work__item__link:hover {
+  .p-work__item__image {
+    &::before {
+      --c-color: var(--color-secondary);
+      --c-width: 2px; /* 線の太さ */
+      --c-size: 30px; /* 角のサイズ（線の長さ） */
+
+      /* --- 四隅の線を描画 --- */
+      background-image: 
+  /* 左上 */ linear-gradient(
+          to right,
+          var(--c-color),
+          var(--c-color)
+        ),
+        linear-gradient(to bottom, var(--c-color), var(--c-color)),
+        /* 右上 */ linear-gradient(to left, var(--c-color), var(--c-color)),
+        linear-gradient(to bottom, var(--c-color), var(--c-color)),
+        /* 右下 */ linear-gradient(to left, var(--c-color), var(--c-color)),
+        linear-gradient(to top, var(--c-color), var(--c-color)),
+        /* 左下 */ linear-gradient(to right, var(--c-color), var(--c-color)),
+        linear-gradient(to top, var(--c-color), var(--c-color));
+
+      background-repeat: no-repeat;
+
+      /* --- 線の配置 --- */
+      background-position: top left, top left, /* 左上 (横, 縦) */ top right,
+        top right, /* 右上 (横, 縦) */ bottom right, bottom right,
+        /* 右下 (横, 縦) */ bottom left, bottom left; /* 左下 (横, 縦) */
+
+      /* --- 線のサイズ（長さと太さ） --- */
+      background-size: var(--c-size) var(--c-width),
+        var(--c-width) var(--c-size), var(--c-size) var(--c-width),
+        var(--c-width) var(--c-size), var(--c-size) var(--c-width),
+        var(--c-width) var(--c-size), var(--c-size) var(--c-width),
+        var(--c-width) var(--c-size);
+    }
+  }
+}
+
+.p-work__item__image {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all var(--transition-duration-300)
+      var(--transition-easing-in-out);
+  }
+}
+
+.p-work__item__title {
+  margin-block-start: var(--space-2);
+  font-weight: var(--font-bold);
+}
+
+.p-work__item__src {
+  margin-block-start: var(--space-2);
+  display: inline-block;
+}

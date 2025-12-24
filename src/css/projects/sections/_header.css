@@ -1,0 +1,22 @@
+/* .ps-header */
+
+.ps-header {
+  position: fixed;
+  transform: translate(0, var(--space-1));
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: var(--space-2);
+  z-index: 2;
+
+  @media (--md) {
+    padding-inline: var(--space-4);
+    padding-block-start: var(--space-2);
+  }
+}
+
+.ps-header__title {
+  font-family: var(--font-poppins);
+  font-weight: var(--font-bold);
+  letter-spacing: -1px;
+}

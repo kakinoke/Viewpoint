@@ -1,0 +1,74 @@
+/* ノーマライズCSSの読み込み */
+@import "modern-normalize";
+
+/* フォントの読み込み */
+@import "@fontsource/dm-mono/400.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/700.css";
+
+:root {
+  line-height: 1.7;
+}
+
+/*  ブロックレベル要素のマージンリセット */
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+/*  リストのマーカーとインデント解除 */
+ol,
+ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
+/*  見出しのフォント継承 */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*  画像・メディアをブロック画像化しレスポンシブ対応 */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* フォント */
+body {
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* スムーススクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all var(--transition-duration-300) var(--transition-easing-in-out);
+
+  &:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+  }
+}

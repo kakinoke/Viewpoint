@@ -1,0 +1,24 @@
+.l-container {
+  width: 100%;
+  padding-inline: var(--space-8);
+
+  @media (--sm) {
+    max-width: var(--breakpoints-sm);
+  }
+  @media (--md) {
+    max-width: var(--breakpoints-md);
+  }
+  @media (--lg) {
+    max-width: var(--breakpoints-lg);
+  }
+  @media (--xl) {
+    max-width: var(--breakpoints-xl);
+  }
+  @media (--2xl) {
+    max-width: var(--breakpoints-2xl);
+  }
+}
+
+.l-mx-auto {
+  margin-inline: auto;
+}
