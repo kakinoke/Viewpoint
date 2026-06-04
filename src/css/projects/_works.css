@@ -23,7 +23,7 @@
   }
 }
 
-.p-work__item__header {
+.p-work__item-header {
   font-family: var(--font-mono);
   font-size: var(--fontsize-sm);
   color: var(--color-secondary);
@@ -31,18 +31,18 @@
   gap: var(--space-4);
 }
 
-.p-work__item__tags {
+.p-work__item-tags {
   display: flex;
   gap: var(--space-2);
 }
 
-.p-work__item__tag {
+.p-work__item-tag {
   font-family: var(--font-mono);
   font-size: var(--fontsize-sm);
   color: var(--color-secondary);
 }
 
-.p-work__item__link {
+.p-work__item-link {
   margin-block-start: var(--space-2);
   display: inline-block;
 
@@ -60,7 +60,7 @@
   }
 }
 
-.p-work__item__link:hover {
+.p-work__item-link:hover {
   .p-work__item__image {
     &::before {
       --c-color: var(--color-secondary);
@@ -68,12 +68,9 @@
       --c-size: 30px; /* 角のサイズ（線の長さ） */
 
       /* --- 四隅の線を描画 --- */
-      background-image: 
-  /* 左上 */ linear-gradient(
-          to right,
-          var(--c-color),
-          var(--c-color)
-        ),
+      background-image:
+  /* 左上 */
+        linear-gradient(to right, var(--c-color), var(--c-color)),
         linear-gradient(to bottom, var(--c-color), var(--c-color)),
         /* 右上 */ linear-gradient(to left, var(--c-color), var(--c-color)),
         linear-gradient(to bottom, var(--c-color), var(--c-color)),
@@ -85,21 +82,31 @@
       background-repeat: no-repeat;
 
       /* --- 線の配置 --- */
-      background-position: top left, top left, /* 左上 (横, 縦) */ top right,
-        top right, /* 右上 (横, 縦) */ bottom right, bottom right,
-        /* 右下 (横, 縦) */ bottom left, bottom left; /* 左下 (横, 縦) */
+      background-position:
+        top left,
+        top left,
+        /* 左上 (横, 縦) */ top right,
+        top right,
+        /* 右上 (横, 縦) */ bottom right,
+        bottom right,
+        /* 右下 (横, 縦) */ bottom left,
+        bottom left; /* 左下 (横, 縦) */
 
       /* --- 線のサイズ（長さと太さ） --- */
-      background-size: var(--c-size) var(--c-width),
-        var(--c-width) var(--c-size), var(--c-size) var(--c-width),
-        var(--c-width) var(--c-size), var(--c-size) var(--c-width),
-        var(--c-width) var(--c-size), var(--c-size) var(--c-width),
+      background-size:
+        var(--c-size) var(--c-width),
+        var(--c-width) var(--c-size),
+        var(--c-size) var(--c-width),
+        var(--c-width) var(--c-size),
+        var(--c-size) var(--c-width),
+        var(--c-width) var(--c-size),
+        var(--c-size) var(--c-width),
         var(--c-width) var(--c-size);
     }
   }
 }
 
-.p-work__item__image {
+.p-work__item-image {
   overflow: hidden;
   position: relative;
 
@@ -121,12 +128,14 @@
   }
 }
 
-.p-work__item__title {
+.p-work__item-title {
   margin-block-start: var(--space-2);
   font-weight: var(--font-bold);
 }
 
-.p-work__item__src {
+.p-work__item-src {
   margin-block-start: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fontsize-xs);
   display: inline-block;
 }

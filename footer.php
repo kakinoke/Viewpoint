@@ -1,6 +1,5 @@
 <?php
-function getIconUri($name): string
-{
+function getIconUri($name): string {
     return get_template_directory_uri() . "/assets/icon/" . $name;
 }
 
@@ -28,9 +27,9 @@ $sns_items = [
     </div>
     <div class="ps-footer__title">VIEWPOINT</div>
     <div class="ps-footer__wrapper">
-        <ul class="ps-footer__contact__items">
+        <ul class="ps-footer__contact-items">
             <?php foreach ($sns_items as $sns_item): ?>
-                <li class="ps-footer__contact__item">
+                <li class="ps-footer__contact-item">
                     <a href="<?php echo $sns_item['link']; ?>">
                         <?php echo $sns_item['title']; ?>
                     </a>

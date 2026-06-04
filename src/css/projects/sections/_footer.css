@@ -23,10 +23,10 @@
   justify-content: space-between;
 }
 
-.ps-footer__contact__items {
+.ps-footer__contact-items {
   display: flex;
   gap: var(--space-4);
 }
 
-.ps-footer__contact__item {
+.ps-footer__contact-item {
 }

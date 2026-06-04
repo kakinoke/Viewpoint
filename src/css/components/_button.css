@@ -20,7 +20,8 @@
     border: 1px solid var(--color-border);
     transition: background-color var(--transition-duration-300)
       var(--transition-easing-in-out);
-    background-image: linear-gradient(to right, var(--c-color), var(--c-color)),
+    background-image:
+      linear-gradient(to right, var(--c-color), var(--c-color)),
       linear-gradient(to bottom, var(--c-color), var(--c-color)),
       linear-gradient(to left, var(--c-color), var(--c-color)),
       linear-gradient(to bottom, var(--c-color), var(--c-color)),
@@ -30,13 +31,25 @@
       linear-gradient(to top, var(--c-color), var(--c-color));
     background-repeat: no-repeat;
 
-    background-position: top left, top left, top right, top right, bottom right,
-      bottom right, bottom left, bottom left;
+    background-position:
+      top left,
+      top left,
+      top right,
+      top right,
+      bottom right,
+      bottom right,
+      bottom left,
+      bottom left;
 
-    background-size: var(--c-size) var(--c-width), var(--c-width) var(--c-size),
-      var(--c-size) var(--c-width), var(--c-width) var(--c-size),
-      var(--c-size) var(--c-width), var(--c-width) var(--c-size),
-      var(--c-size) var(--c-width), var(--c-width) var(--c-size);
+    background-size:
+      var(--c-size) var(--c-width),
+      var(--c-width) var(--c-size),
+      var(--c-size) var(--c-width),
+      var(--c-width) var(--c-size),
+      var(--c-size) var(--c-width),
+      var(--c-width) var(--c-size),
+      var(--c-size) var(--c-width),
+      var(--c-width) var(--c-size);
 
     &::before,
     &::after {
@@ -83,13 +96,15 @@
 
 .c-button-exlink {
   position: relative;
-  display: flex;
-  gap: var(--space-1);
   align-items: center;
 
   &::after {
     content: "open_in_new";
-    font-family: 'Material Icons';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(-1 * var(--space-5));
+    font-family: "Material Icons";
     font-size: 1em;
     font-weight: normal;
     font-style: normal;
@@ -100,7 +115,7 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -webkit-font-feature-settings: 'liga';
+    -webkit-font-feature-settings: "liga";
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
     margin-left: 0.25em;

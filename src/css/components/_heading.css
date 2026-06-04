@@ -1,4 +1,4 @@
-.c-heading__h2__wrapper {
+.c-heading__h2-wrapper {
   position: relative;
   width: 100%;
   display: grid;
@@ -50,7 +50,7 @@
   }
 }
 
-.c-heading__h3__wrapper {
+.c-heading__h3-wrapper {
   position: relative;
   padding-block-start: var(--space-5);
 

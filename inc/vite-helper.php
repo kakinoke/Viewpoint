@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Viteのアセットを読み込むヘルパー関数
  */
@@ -6,8 +7,7 @@ define('VITE_SERVER', 'http://localhost:4321');
 define('THEME_DIST_PATH', get_template_directory_uri() . '/dist');
 define('THEME_DIST_DIR', get_template_directory() . '/dist');
 
-function vite_enqueue_assets()
-{
+function vite_enqueue_assets() {
     // 開発環境の判定
     // IS_VITE_DEV定数が定義されている場合はそれを使用
     $is_dev = false;
@@ -28,7 +28,6 @@ function vite_enqueue_assets()
 
         // 3. CSSエントリポイント（開発時も明示的に読み込む）
         wp_enqueue_style('vite-main-css', VITE_SERVER . '/src/css/main.css', [], null);
-
     } else {
         // 【本番時】ビルドされたファイルを manifest.json から探して読み込む
         $manifest_path = THEME_DIST_DIR . '/.vite/manifest.json';

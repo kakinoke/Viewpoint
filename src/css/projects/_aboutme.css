@@ -29,6 +29,14 @@
     height: auto;
   }
 
+  @media (--sm) {
+    width: 60%;
+  }
+
+  @media (--md) {
+    width: 50%;
+  }
+
   @media (--lg) {
     width: 100%;
   }
@@ -37,12 +45,12 @@
 .p-about__meta {
 }
 
-.p-aboutme__profile__name {
+.p-aboutme__profile-name {
   font-size: var(--fontsize-2xl);
   font-weight: var(--font-semibold);
 }
 
-.p-aboutme__profile__description {
+.p-aboutme__profile-desc {
   p {
     margin-block-start: var(--space-4);
   }
@@ -62,15 +70,15 @@
   margin-block-start: var(--space-16);
 }
 
-.p-aboutme__skill__description {
+.p-aboutme__skill-desc {
   margin-block-start: var(--space-4);
 }
 
-.p-aboutme__skill__more {
+.p-aboutme__skill-more {
   margin-block-start: var(--space-2);
 }
 
-.p-aboutme__skill__cards {
+.p-aboutme__skill-cards {
   counter-reset: item-counter;
   display: grid;
   grid-template-columns: 1;
@@ -86,7 +94,7 @@
   }
 }
 
-.p-aboutme__skill__card {
+.p-aboutme__skill-card {
   counter-increment: item-counter;
   background-color: var(--color-surface);
   padding-inline: var(--space-4);
@@ -105,15 +113,15 @@
   }
 }
 
-.p-aboutme__skill__name {
+.p-aboutme__skill-name {
   font-weight: var(--font-bold);
   font-family: var(--font-poppins);
 }
-.p-aboutme__skill__caption {
+.p-aboutme__skill-caption {
   margin-block-start: var(--space-4);
 }
 
-.p-aboutme__skill__links {
+.p-aboutme__skill-links {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
