@@ -1,10 +1,10 @@
-.ps-footer {
+.l-footer {
   padding-inline: var(--space-4);
   margin-block-end: var(--space-4);
   margin-block-start: var(--space-32);
 }
 
-.ps-footer__title {
+.l-footer__title {
   color: var(--color-gray-300);
   font-size: var(--fontsize-4xl);
   font-family: var(--font-primary);
@@ -17,16 +17,16 @@
   }
 }
 
-.ps-footer__wrapper {
+.l-footer__wrapper {
   margin-block-start: var(--space-4);
   display: flex;
   justify-content: space-between;
 }
 
-.ps-footer__contact-items {
+.l-footer__contact-items {
   display: flex;
   gap: var(--space-4);
 }
 
-.ps-footer__contact-item {
+.l-footer__contact-item {
 }

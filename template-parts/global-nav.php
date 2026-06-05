@@ -1,6 +1,5 @@
 <?php
-function createNavItem($title, $link): array
-{
+function createNavItem($title, $link): array {
 
     return [
         "title" => $title,
@@ -15,10 +14,10 @@ $nav_items = [
 ];
 ?>
 
-<nav class="ps-nav">
-    <ul class="ps-nav__items">
+<nav class="p-nav">
+    <ul class="p-nav__items">
         <?php foreach ($nav_items as $nav_item): ?>
-            <li class="ps-nav__item">
+            <li class="p-nav__item">
                 <a href="<?php echo $nav_item["link"]; ?>">
                     <?php echo $nav_item["title"]; ?></a>
             </li>

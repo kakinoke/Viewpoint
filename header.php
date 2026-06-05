@@ -12,7 +12,7 @@
     <div class="p-gridline"></div>
     <div class="p-viewport"></div>
 
-    <header class="ps-header">
-        <h1 class="ps-header__title">VIEWPOINT</h1>
+    <header class="l-header">
+        <h1 class="l-header__title">VIEWPOINT</h1>
         <?php get_template_part(slug: 'template-parts/global-nav'); ?>
     </header>

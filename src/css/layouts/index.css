@@ -9,3 +9,9 @@
 
 /* スクリーンリーダーオンリー */
 @import "./_sr_only.css";
+
+/* ヘッダー */
+@import "./_header.css";
+
+/* フッター */
+@import "./_footer.css";

@@ -1,6 +1,6 @@
-/* .ps-header */
+/* .l-header */
 
-.ps-header {
+.l-header {
   position: fixed;
   transform: translate(0, var(--space-1));
   display: flex;
@@ -15,7 +15,7 @@
   }
 }
 
-.ps-header__title {
+.l-header__title {
   font-family: var(--font-poppins);
   font-weight: var(--font-bold);
   letter-spacing: -1px;

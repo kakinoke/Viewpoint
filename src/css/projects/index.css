@@ -1,5 +1,5 @@
 /* セクションの読み込み */
-@import "./sections/index.css";
+@import "./_hero.css";
 @import "./_works.css";
 @import "./_aboutme.css";
 @import "./_single.css";
@@ -10,11 +10,8 @@ body {
 }
 
 .p-gridline {
-  background-image: linear-gradient(
-      to right,
-      var(--color-gray-200) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, var(--color-gray-200) 1px, transparent 1px),
     linear-gradient(to bottom, var(--color-gray-200) 1px, transparent 1px);
   position: fixed;
   background-size: 100px 100px;

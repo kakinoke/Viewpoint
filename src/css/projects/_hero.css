@@ -1,6 +1,5 @@
-/* projects/sections */
-
-.ps-hero {
+/* projects */
+.p-hero {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -14,7 +13,7 @@
   }
 }
 
-.ps-hero__wrapper {
+.p-hero__wrapper {
   position: relative;
 
   &::before,
@@ -74,7 +73,7 @@
   }
 }
 
-.ps-hero__heading {
+.p-hero__heading {
   svg {
     width: 100%;
     display: block;
@@ -119,7 +118,7 @@
   }
 }
 
-.ps-hero__subheading {
+.p-hero__subheading {
   font-family: var(--font-primary);
   font-weight: var(--font-exbold);
   font-size: var(--fontsize-4xl);
@@ -134,11 +133,11 @@
   }
 }
 
-.ps-hero__subheading-gray {
+.p-hero__subheading-gray {
   color: var(--color-border);
 }
 
-.ps-hero__subtitle {
+.p-hero__subtitle {
   position: absolute;
   font-size: var(--fontsize-sm);
   color: var(--color-border-gray);

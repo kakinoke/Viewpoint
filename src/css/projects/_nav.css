@@ -1,7 +1,7 @@
-.ps-nav {
+.p-nav {
 }
 
-.ps-nav__items {
+.p-nav__items {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -9,7 +9,7 @@
   gap: var(--space-2);
 }
 
-.ps-nav__item {
+.p-nav__item {
   a {
     font-weight: var(--font-semibold);
   }

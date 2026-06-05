@@ -21,22 +21,22 @@ $sns_items = [
     ],
 ];
 ?>
-<footer class="ps-footer">
+<footer class="l-footer">
     <div class="l-container l-mx-auto">
         <div class="c-divider"></div>
     </div>
-    <div class="ps-footer__title">VIEWPOINT</div>
-    <div class="ps-footer__wrapper">
-        <ul class="ps-footer__contact-items">
+    <div class="l-footer__title">VIEWPOINT</div>
+    <div class="l-footer__wrapper">
+        <ul class="l-footer__contact-items">
             <?php foreach ($sns_items as $sns_item): ?>
-                <li class="ps-footer__contact-item">
+                <li class="l-footer__contact-item">
                     <a href="<?php echo $sns_item['link']; ?>">
                         <?php echo $sns_item['title']; ?>
                     </a>
                 </li>
             <?php endforeach; ?>
         </ul>
-        <p class="ps-footer__copyright">
+        <p class="l-footer__copyright">
             © <?php bloginfo(show: 'title'); ?>
         </p>
     </div>

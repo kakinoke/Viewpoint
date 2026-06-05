@@ -1,6 +1,6 @@
-<section class="ps-hero">
-    <div class="ps-hero__wrapper">
-        <div class="ps-hero__heading">
+<section class="p-hero">
+    <div class="p-hero__wrapper">
+        <div class="p-hero__heading">
             <svg id="logo" data-name="1 xmlns=" http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 145.79 19.55">
                 <defs>
                     <filter id="drop-shadow-1" x=".6" y="0" width="145.19" height="19.14" filterUnits="userSpaceOnUse">
@@ -24,9 +24,9 @@
                 </g>
             </svg>
         </div>
-        <div class="ps-hero__subheading u-animation-fadein">
-            FRAMING<br /><span class="ps-hero__subheading-gray">THE</span><br />ESSENTIALS
+        <div class="p-hero__subheading u-animation-fadein">
+            FRAMING<br /><span class="p-hero__subheading-gray">THE</span><br />ESSENTIALS
         </div>
-        <div class="ps-hero__subtitle u-animation-fadein">カキザカイユウのポートフォリオ</div>
+        <div class="p-hero__subtitle u-animation-fadein">カキザカイユウのポートフォリオ</div>
     </div>
 </section>
