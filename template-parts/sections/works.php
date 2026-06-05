@@ -23,20 +23,20 @@ $index = 1;
                         $work_url = get_post_meta(get_the_ID(), '_work_url', true);
                         $terms = get_the_terms($post->ID, 'work-tag');
                         ?>
-                        <div class="p-work__item-header u-scroll-fadein">
+                        <header class="p-work__item-header u-scroll-fadein">
                             <span class="p-work__item-index"><?php echo sprintf('%02d', $index) . "."; ?></span>
                             <ul class="p-work__item-tags">
                                 <?php foreach ($terms as $term) : ?>
                                     <li class="p-work__item-tag">#<?php echo $term->name; ?></li>
                                 <?php endforeach; ?>
                             </ul>
-                        </div>
+                        </header>
                         <a href="<?php echo esc_url($permalink); ?>" class="p-work__item-link">
                             <?php if (has_post_thumbnail()): ?>
                                 <div class="p-work__item-image">
-                                    <div class="u-scroll-slidein">
+                                    <figure class="u-scroll-slidein">
                                         <?php the_post_thumbnail(); ?>
-                                    </div>
+                                    </figure>
                                 </div>
                             <?php endif; ?>
                             <h3 class="p-work__item-title u-scroll-fadein"><?php the_title(); ?></h2>

@@ -6,3 +6,6 @@
 
 /* グリッド */
 @import "./_grid.css";
+
+/* スクリーンリーダーオンリー */
+@import "./_sr_only.css";

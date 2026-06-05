@@ -68,21 +68,22 @@ $skills = [
     createSkill("development", $dev_heading_args, $dev_desc, $skill_dev),
 ];
 ?>
-<section id="aboutme" class="p-aboutme">
+<article id="aboutme" class="p-aboutme">
     <?php get_template_part("template-parts/components/heading", "h2", $heading_args); ?>
     <div class="p-aboutme__items">
-        <div class="p-aboutme__profile">
-            <div class="p-aboutme__image u-scroll-fadein">
+        <section class="p-aboutme__profile">
+            <h3 class="sr-only"><?php echo $about_title; ?>のプロフィール</h3>
+            <figure class="p-aboutme__image u-scroll-fadein">
                 <img src="<?php echo $about_thumbnail; ?>" alt="柿境 裕のプロフィール写真">
-            </div>
+            </figure>
             <div class="p-aboutme__meta u-scroll-fadein">
-                <div class="p-aboutme__profile-name"><?php echo $about_title; ?></div>
+                <h4 class="p-aboutme__profile-name"><?php echo $about_title; ?></h4>
                 <div class="p-aboutme__profile-desc"><?php echo $about_content; ?></div>
             </div>
-        </div>
+        </section>
         <div class="p-aboutme__skills">
             <?php foreach ($skills as $skill) : ?>
-                <div class="p-aboutme__skill u-scroll-fadein">
+                <section class="p-aboutme__skill u-scroll-fadein">
                     <?php get_template_part("template-parts/components/heading", "h3", $skill["heading"]); ?>
                     <p class="p-aboutme__skill-desc"><?php echo esc_html($skill["description"]); ?></p>
                     <div class="p-aboutme__skill-more">
@@ -98,7 +99,7 @@ $skills = [
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                </div>
+                </section>
             <?php endforeach; ?>
             <!-- design / development -->
             <div class="p-aboutme__skill u-scroll-fadein">
@@ -112,4 +113,4 @@ $skills = [
             <!-- writing -->
         </div>
     </div>
-</section>
+</article>

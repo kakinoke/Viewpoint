@@ -7,12 +7,12 @@ $work_url = get_post_meta($post->ID, '_work_url', true);
     <?php while (have_posts()) : the_post(); ?>
         <article class="p-single__work">
             <div class="l-container l-mx-auto">
-                <div class="p-single__work-thumbnail">
+                <figure class="p-single__work-thumbnail">
                     <?php the_post_thumbnail(); ?>
-                </div>
+                </figure>
                 <div class="l-grid">
                     <div class="p-single__work-inner">
-                        <div class="p-single__work-meta">
+                        <header class="p-single__work-meta">
                             <?php if ($terms): ?>
                                 <ul class="p-single__work-tags">
                                     <?php foreach ($terms as $term): ?>
@@ -26,10 +26,11 @@ $work_url = get_post_meta($post->ID, '_work_url', true);
                                     <?php echo esc_url($work_url); ?>
                                 </a>
                             </div>
-                        </div>
-                        <div class="p-single__work-content">
+                        </header>
+                        <section class="p-single__work-content">
+                            <h3 class="sr-only">実績紹介</h3>
                             <?php the_content(); ?>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>

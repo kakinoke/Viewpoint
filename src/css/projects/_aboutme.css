@@ -15,8 +15,12 @@
   gap: var(--space-8);
 
   @media (--lg) {
-    grid-column: 3 / 11;
+    grid-column: 2 / 12;
     grid-template-columns: 2fr 3fr;
+  }
+
+  @media (--xl) {
+    grid-column: 3 / 11;
   }
 }
 

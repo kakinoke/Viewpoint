@@ -58,11 +58,18 @@
       transform: scale(1.1);
     }
   }
+
+  .p-work__item-image::before {
+    transition: all var(--transition-duration-300)
+      var(--transition-easing-in-out);
+    opacity: 0;
+  }
 }
 
 .p-work__item-link:hover {
-  .p-work__item__image {
+  .p-work__item-image {
     &::before {
+      opacity: 1;
       --c-color: var(--color-secondary);
       --c-width: 2px; /* 線の太さ */
       --c-size: 30px; /* 角のサイズ（線の長さ） */
