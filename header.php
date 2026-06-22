@@ -13,6 +13,6 @@
     <div class="p-viewport"></div>
 
     <header class="l-header">
-        <h1 class="l-header__title">VIEWPOINT</h1>
+        <h1 class="l-header__title"><a href="/">VIEWPOINT</a></h1>
         <?php get_template_part(slug: 'template-parts/global-nav'); ?>
     </header>
