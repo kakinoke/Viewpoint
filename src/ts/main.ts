@@ -7,7 +7,6 @@ const cards = document.querySelectorAll(".u-card");
 // 該当のdata属性のカードを取得
 const getCard = (dataset: string | null) => {
     if (!dataset) return;
-    console.log(dataset);
     return Array.from(cards).find(card => {
         return (card as HTMLElement).dataset.card === dataset;
     });
@@ -22,7 +21,6 @@ moreButtons.forEach((moreButton) => {
         // data属性の取得
         const buttonDataset = (moreButton as HTMLElement).dataset.card || null;
         const card = getCard(buttonDataset);
-        console.log(buttonDataset);
 
         if (!card) return;
 
@@ -34,7 +32,6 @@ moreButtons.forEach((moreButton) => {
 document.addEventListener("DOMContentLoaded", () => {
     // u-scrollクラスを取得
     const scrollElem = document.querySelectorAll("[class*=u-scroll-]");
-    console.log(scrollElem);
     if (scrollElem.length === 0) return;
 
     const createObserver = (threshold: number) =>
