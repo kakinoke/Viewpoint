@@ -53,7 +53,8 @@ svg {
 
 /* フォント */
 body {
-  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック Medium",
+  font-family:
+    "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック Medium",
     "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
@@ -65,7 +66,7 @@ html {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  transition: all var(--transition-duration-300) var(--transition-easing-in-out);
+  transition: all var(--duration-300) var(--easing-inout);
 
   &:hover {
     color: var(--color-hover);

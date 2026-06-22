@@ -46,12 +46,12 @@
 .u-scroll-slidein.active {
   img {
     opacity: 1;
-    animation: slideInAnimation 1s var(--transition-easing-in-out);
+    animation: slideInAnimation 1s var(--easing-inout);
   }
 
   &::before {
     transform: translateX(100%);
-    animation: slideInBgAnimation 1.5s var(--transition-easing-in-out);
+    animation: slideInBgAnimation 1.5s var(--easing-inout);
   }
 }
 
@@ -95,7 +95,7 @@
 .u-scroll-fadein.active {
   transform: translateY(0);
   opacity: 1;
-  animation: scrollFadeinAnimation 1s var(--transition-easing-in-out);
+  animation: scrollFadeinAnimation 1s var(--easing-inout);
 }
 
 @keyframes scrollFadeinAnimation {

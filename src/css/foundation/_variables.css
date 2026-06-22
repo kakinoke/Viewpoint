@@ -312,21 +312,21 @@
   --color-hover: var(--color-gray-400);
 
   /* トランジションのデフォルト duration（ms） */
-  --transition-duration-default: 150ms;
-  --transition-duration-75: 75ms;
-  --transition-duration-100: 100ms;
-  --transition-duration-150: 150ms;
-  --transition-duration-200: 200ms;
-  --transition-duration-300: 300ms;
-  --transition-duration-500: 500ms;
-  --transition-duration-700: 700ms;
-  --transition-duration-1000: 1000ms;
+  --duration-default: 150ms;
+  --duration-75: 75ms;
+  --duration-100: 100ms;
+  --duration-150: 150ms;
+  --duration-200: 200ms;
+  --duration-300: 300ms;
+  --duration-500: 500ms;
+  --duration-700: 700ms;
+  --duration-1000: 1000ms;
 
   /* トランジションのイージング */
-  --transition-easing-in: cubic-bezier(0.4, 0, 1, 1);
-  --transition-easing-out: cubic-bezier(0, 0, 0.2, 1);
-  --transition-easing-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-easing-linear: linear;
+  --easing-in: cubic-bezier(0.4, 0, 1, 1);
+  --easing-out: cubic-bezier(0, 0, 0.2, 1);
+  --easing-inout: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-linear: linear;
 
   /* フォントウェイト */
   --font-base: 400;
@@ -335,7 +335,8 @@
   --font-exbold: 900;
 
   /* メインフォント */
-  --font-primary: Poppins, "Montserrat", ui-sans-serif, system-ui, sans-serif,
+  --font-primary:
+    Poppins, "Montserrat", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-poppins: Poppins;
 

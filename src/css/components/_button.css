@@ -18,8 +18,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid var(--color-border);
-    transition: background-color var(--transition-duration-300)
-      var(--transition-easing-in-out);
+    transition: background-color var(--duration-300) var(--easing-inout);
     background-image:
       linear-gradient(to right, var(--c-color), var(--c-color)),
       linear-gradient(to bottom, var(--c-color), var(--c-color)),
@@ -56,8 +55,7 @@
       content: "";
       position: absolute;
       background-color: var(--color-secondary);
-      transition: all var(--transition-duration-300)
-        var(--transition-easing-in-out);
+      transition: all var(--duration-300) var(--easing-inout);
     }
 
     &::before {
