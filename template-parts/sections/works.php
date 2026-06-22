@@ -44,7 +44,6 @@ $index = 1;
                         <?php if ($work_url): ?>
                             <a class="p-work__item-src u-scroll-fadein c-button-exlink" href="<?php echo esc_url($work_url); ?>" target="_blank"><?php echo esc_url($work_url); ?></a>
                         <?php endif; ?>
-                        <p><?php $work_url; ?></p>
                     </article>
                 <?php $index += 1;
                 endwhile; ?>
