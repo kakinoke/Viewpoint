@@ -12,3 +12,6 @@ add_theme_support('title-tag');
 add_theme_support('post-thumbnails');
 
 require_once get_template_directory() . '/inc/work-post.php';
+
+// テンプレートファイルの階層化
+require_once get_template_directory() . '/inc/single-template.php';
