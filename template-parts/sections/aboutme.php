@@ -6,15 +6,14 @@ $about_content = $about_page->post_content;
 $about_title = $about_page->post_title;
 $about_thumbnail = get_the_post_thumbnail_url($about_page);
 
-
-function createSkillCard($name, $caption) {
+function createSkillCard(string $name, string $caption) {
     return [
         "name" => $name,
         "caption" => $caption
     ];
 }
 
-function createSkill($dataset, $heading, $description, $skills) {
+function createSkill(string $dataset, array $heading, string $description, array $skills) {
     return [
         "dataset" => $dataset,
         "heading" => $heading,
