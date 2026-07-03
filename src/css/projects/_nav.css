@@ -42,10 +42,11 @@
 .p-nav__item {
   a {
     font-size: var(--fontsize-3xl);
-    font-weight: var(--font-semibold);
+    font-weight: var(--font-bold);
 
     @media (--md) {
       font-size: var(--fontsize-md);
+      font-weight: var(--font-semibold);
     }
   }
 }
