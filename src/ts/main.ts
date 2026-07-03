@@ -28,6 +28,33 @@ moreButtons.forEach((moreButton) => {
     })
 })
 
+// ハンバーガーメニューの開閉
+const menu_btn = document.querySelector(".p-nav-mobile__button");
+const nav_lines = document.querySelectorAll(".p-nav-mobile__line");
+const nav = document.querySelector('.p-nav');
+menu_btn?.addEventListener('click', (event) => {
+	event.preventDefault();
+
+	nav_lines.forEach((nav_line) => {
+		nav_line.classList.toggle("open");
+	});
+
+	nav?.classList.toggle("open");
+});
+
+// メニューをクリックしたときにハンバーガーメニューを閉じる
+const nav_items = document.querySelectorAll('.p-nav__item > a');
+nav_items.forEach((nav_item) => {
+	nav_item.addEventListener('click', () => {
+
+		nav_lines.forEach((nav_line) => {
+			nav_line.classList.remove("open");
+		});
+
+		nav?.classList.remove("open");
+	});
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
     // u-scrollクラスを取得

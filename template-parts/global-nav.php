@@ -8,9 +8,9 @@ function createNavItem($title, $link): array {
 }
 
 $nav_items = [
-    createNavItem(title: "ホーム", link: "/"),
-    createNavItem(title: "制作したもの", link: "#p-work"),
-    createNavItem(title: "わたしについて", link: "#aboutme"),
+    // createNavItem(title: "ホーム", link: "/"),
+    createNavItem(title: "制作したもの", link: "/#p-work"),
+    createNavItem(title: "わたしについて", link: "/#aboutme"),
 ];
 ?>
 
@@ -24,3 +24,8 @@ $nav_items = [
         <?php endforeach; ?>
     </ul>
 </nav>
+
+<button class="p-nav-mobile__button" aria-label="メニューを開く">
+	<span class="p-nav-mobile__line"></span>
+	<span class="p-nav-mobile__line"></span>
+</button>

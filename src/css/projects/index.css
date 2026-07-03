@@ -3,6 +3,7 @@
 @import "./_works.css";
 @import "./_aboutme.css";
 @import "./_single.css";
+@import "_nav.css";
 
 body {
   background-color: var(--color-body);
