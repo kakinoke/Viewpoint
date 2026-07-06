@@ -11,15 +11,27 @@
 
 .p-work__item {
   &:nth-child(odd) {
-    grid-column: 1 / 9;
+	  grid-column: 1 / 10;
+
+	  @media (--md) {
+	    grid-column: 1 / 9;
+	  }
   }
 
   &:nth-child(even) {
-    grid-column: 5 / 13;
+  	grid-column: 4 / -1;
+
+  	@media (--md) {
+	   grid-column: 5 / -1;
+   }
   }
 
   &:first-child {
-    grid-column: 2 / 12;
+    grid-column: 1 / -1;
+
+    @media (--md) {
+	    grid-column: 2 / 12;
+    }
   }
 }
 
